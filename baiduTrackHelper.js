@@ -9,6 +9,7 @@ try{
 }
 var _hmt = _hmt || [];
 if(typeof _BTA != 'undefined' && _BTA != ''){
+	_hmt.push(['_setAccount', _BTA]);
 	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F" + _BTA + "' type='text/javascript'%3E%3C/script%3E"));
 	(function($){
