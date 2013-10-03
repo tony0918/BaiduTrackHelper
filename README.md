@@ -24,6 +24,6 @@ data-baiduTrack | The real track code.  | Example: ['_trackEvent', 'music', 'pla
 rel | Avaliable values: new | Optional
 
 ## LICENSE ##
-Copyright 2013 [Tony Mao](http://weibo.com/345870926) Licensed under the Apache License, Version 2.0
+Copyright 2013 [Tony Mao](http://weibo.com/345870926). Released under MIT License.
 
 
