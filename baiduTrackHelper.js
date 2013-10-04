@@ -1,5 +1,5 @@
 /*
-Apache License
+MIT License
 author: Tony Mao [huiliumao@gmail.com]
 */
 try{
@@ -14,17 +14,11 @@ if(typeof _BTA != 'undefined' && _BTA != ''){
 	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F" + _BTA + "' type='text/javascript'%3E%3C/script%3E"));
 	(function($){
 		$(function(){
-			$('a.baiduTrack').click(function(e){
-				e.preventDefault();
-				var baiduTrack = $(this).attr('data-baiduTrack');
-				if (baiduTrack){
-					_hmt.push(eval(baiduTrack));
-				}
-				var rel = $(this).attr('rel');
-				if (rel == 'new'){
-					window.open($(this).attr('href'));
-				}else{
-					window.location.href = $(this).attr('href');
+			$('a[data-baiduTrack]').click(function(e){
+				var baiduTrack = $(e.currentTarget).attr('data-baiduTrack');
+				_hmt.push(eval(baiduTrack));
+				if(e.isDefaultPrevented()){
+					e.preventDefault();
 				}
 			});
 		});

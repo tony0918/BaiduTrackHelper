@@ -15,15 +15,20 @@ var _BTA = 'Your own account id for the website';
 
 ## How to add a event track to a link ##
 ```
-<a href="#" data-baiduTrack="['_trackEvent', 'music', 'play', 'Hey Jude']" class="baiduTrack">Test event track on a link click function.</a>
+<a href="#" data-baiduTrack="['_trackEvent', 'music', 'play', 'Hey Jude']">Test event track on a link click function.</a>
 ```
 Params | Description | Tips
 ------------ | ------------- | ------------
-class | Constant: baiduTrack  | Require
-data-baiduTrack | The real track code.  | Example: ['_trackEvent', 'music', 'play', 'Hey Jude']
-rel | Avaliable values: new | Optional
+data-baiduTrack | The real track code. Required. | Example: ['_trackEvent', 'music', 'play', 'Hey Jude']
 
 ## LICENSE ##
 Copyright 2013 [Tony Mao](http://weibo.com/345870926). Released under MIT License.
+
+#### Contact Author ####
+1. The best way is to [submit issues](https://github.com/tony0918/BaiduTrackHelper/issues).
+2. Also you can find me in following ways
+	* SinaWeibo: [@Tony_鎏鎏](http://weibo.com/345870926)
+	* Fackbook: [毛慧鎏](https://www.facebook.com/tonymao000)
+	* Twitter: [@tony0918](https://twitter.com/tony0918)
 
 
